@@ -13,6 +13,7 @@
 		1C06B86F2634640100584B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B86D2634640100584B7A /* Main.storyboard */; };
 		1C06B8712634640600584B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B8702634640600584B7A /* Assets.xcassets */; };
 		1C06B8742634640600584B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B8722634640600584B7A /* LaunchScreen.storyboard */; };
+		1C06B880263464C400584B7A /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C06B87F263464C400584B7A /* alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1C06B8702634640600584B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C06B8732634640600584B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C06B8752634640600584B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C06B87F263464C400584B7A /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		1C06B8662634640100584B7A /* egg-timer */ = {
 			isa = PBXGroup;
 			children = (
+				1C06B8722634640600584B7A /* LaunchScreen.storyboard */,
+				1C06B86D2634640100584B7A /* Main.storyboard */,
 				1C06B8672634640100584B7A /* AppDelegate.swift */,
 				1C06B8692634640100584B7A /* SceneDelegate.swift */,
 				1C06B86B2634640100584B7A /* ViewController.swift */,
-				1C06B86D2634640100584B7A /* Main.storyboard */,
 				1C06B8702634640600584B7A /* Assets.xcassets */,
-				1C06B8722634640600584B7A /* LaunchScreen.storyboard */,
+				1C06B87E263464C400584B7A /* SFX */,
 				1C06B8752634640600584B7A /* Info.plist */,
 			);
 			path = "egg-timer";
+			sourceTree = "<group>";
+		};
+		1C06B87E263464C400584B7A /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				1C06B87F263464C400584B7A /* alarm.mp3 */,
+			);
+			path = SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C06B880263464C400584B7A /* alarm.mp3 in Resources */,
 				1C06B8742634640600584B7A /* LaunchScreen.storyboard in Resources */,
 				1C06B8712634640600584B7A /* Assets.xcassets in Resources */,
 				1C06B86F2634640100584B7A /* Main.storyboard in Resources */,
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = "egg-timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
 				INFOPLIST_FILE = "egg-timer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
